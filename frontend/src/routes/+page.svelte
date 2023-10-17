@@ -33,7 +33,7 @@
 
 </script>
 
-<div class="min-h-screen flex items-center justify-center">
+<div class="flex justify-center mt-8">
   <div class="bg-white p-6 rounded shadow-md">
     <input 
       bind:value={steamId} 
@@ -49,10 +49,13 @@
   </div>
 </div>
 
-{#if userStats}
-  <UserGameInformation userStats={userStats} />
-{/if}
 
-{#if topGames && topGames.length > 0}
-  <GameInfoBox games={topGames} />
-{/if}
+<div class="space-y-2 mt-8">
+  {#if userStats}
+    <UserGameInformation userStats={userStats} />
+  {/if}
+
+  {#if topGames && topGames.length > 0}
+    <GameInfoBox games={topGames} />
+  {/if}
+</div>
