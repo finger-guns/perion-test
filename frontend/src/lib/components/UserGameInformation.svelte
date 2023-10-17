@@ -4,7 +4,7 @@
     export let userStats: GameStats | null = null;
 </script>
   
-<div class="bg-white p-6 rounded shadow-md max-w-xl mx-auto mb-4 text-center">
+<div class="bg-white p-6 rounded shadow-md max-w-xl mx-auto mb-4 text-center border border-gray-300">
     {#if userStats}
       <p class="mb-2"><strong>Total Games:</strong> {userStats.totalGames}</p>
       <p class="mb-2"><strong>Total Playtime:</strong> {userStats.totalPlaytime} hours</p>

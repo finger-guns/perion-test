@@ -5,7 +5,7 @@
 </script>
 
 {#each games as game}
-<div class="bg-white p-6 rounded shadow-md max-w-xl mx-auto mb-4">
+<div class="bg-white p-6 rounded shadow-md max-w-xl mx-auto mb-4 border border-gray-300">
   <img src={game.details.header_image} alt={game.details.name} class="rounded mb-4 w-full h-48 object-cover"/>
   <h2 class="text-2xl font-bold mb-2">{game.details.name}</h2>
   <p class="text-sm text-gray-600 mb-4">{game.details.type}</p>
